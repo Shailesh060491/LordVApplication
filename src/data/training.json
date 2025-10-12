@@ -1,0 +1,40 @@
+{
+  "training": [
+    {
+      "id": 1,
+      "title": "React Development Bootcamp",
+      "description": "Complete course on modern React development with hooks, context, and best practices.",
+      "duration": "8 weeks",
+      "level": "Beginner to Intermediate",
+      "price": "$899",
+      "features": ["Live Sessions", "Project-based Learning", "Certificate", "Job Placement Support"]
+    },
+    {
+      "id": 2,
+      "title": "Full-Stack Web Development",
+      "description": "Comprehensive training covering frontend, backend, and database technologies.",
+      "duration": "12 weeks",
+      "level": "Beginner",
+      "price": "$1,299",
+      "features": ["HTML/CSS/JavaScript", "React & Node.js", "Database Design", "Deployment"]
+    },
+    {
+      "id": 3,
+      "title": "UI/UX Design Masterclass",
+      "description": "Learn modern design principles, tools, and user experience optimization.",
+      "duration": "6 weeks",
+      "level": "All Levels",
+      "price": "$699",
+      "features": ["Figma Training", "Design Systems", "User Research", "Portfolio Development"]
+    },
+    {
+      "id": 4,
+      "title": "DevOps & Deployment",
+      "description": "Learn modern deployment strategies, CI/CD, and cloud infrastructure.",
+      "duration": "4 weeks",
+      "level": "Intermediate",
+      "price": "$599",
+      "features": ["Docker & Kubernetes", "AWS/Azure", "CI/CD Pipelines", "Monitoring"]
+    }
+  ]
+}

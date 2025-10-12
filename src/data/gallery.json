@@ -1,0 +1,52 @@
+{
+  "gallery": [
+    {
+      "id": 1,
+      "title": "E-commerce Platform",
+      "category": "Web Development",
+      "image": "/assets/gallery/ecommerce-1.jpg",
+      "description": "Modern e-commerce platform with advanced features",
+      "technologies": ["React", "Node.js", "MongoDB"]
+    },
+    {
+      "id": 2,
+      "title": "Healthcare Management System",
+      "category": "Healthcare",
+      "image": "/assets/gallery/healthcare-1.jpg",
+      "description": "HIPAA-compliant patient management system",
+      "technologies": ["React", "Express", "PostgreSQL"]
+    },
+    {
+      "id": 3,
+      "title": "Learning Management System",
+      "category": "Education",
+      "image": "/assets/gallery/education-1.jpg",
+      "description": "Comprehensive LMS for educational institutions",
+      "technologies": ["Vue.js", "Laravel", "MySQL"]
+    },
+    {
+      "id": 4,
+      "title": "Real Estate Portal",
+      "category": "Real Estate",
+      "image": "/assets/gallery/realestate-1.jpg",
+      "description": "Property listing and management platform",
+      "technologies": ["React", "Firebase", "Google Maps API"]
+    },
+    {
+      "id": 5,
+      "title": "Mobile Banking App",
+      "category": "Finance",
+      "image": "/assets/gallery/finance-1.jpg",
+      "description": "Secure mobile banking application",
+      "technologies": ["React Native", "Node.js", "MongoDB"]
+    },
+    {
+      "id": 6,
+      "title": "Manufacturing Dashboard",
+      "category": "Manufacturing",
+      "image": "/assets/gallery/manufacturing-1.jpg",
+      "description": "Production monitoring and analytics dashboard",
+      "technologies": ["React", "D3.js", "WebSocket"]
+    }
+  ]
+}

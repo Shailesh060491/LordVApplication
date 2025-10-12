@@ -1,0 +1,21 @@
+{
+  "brand": "Lord V Services",
+  "title": "Lord V Services - Security & Facilities Management Solutions",
+  "description": "Leading provider of comprehensive security services, facility management, housekeeping, electronic security, and asset management solutions.",
+  "keywords": "security services, facility management, housekeeping, electronic security, third-party outsourcing, asset management, soft services, cash management",
+  "author": "Lord V Services",
+  "logo": "/assets/logo.png",
+  "favicon": "/assets/favicon.ico",
+  "contact": {
+    "email": "info@lordvservices.com",
+    "phone": "+91 8412087700",
+    "address": "New Delhi, India",
+    "website": "https://lordvservices.com"
+  },
+  "social": {
+    "facebook": "https://facebook.com/lordvservices",
+    "twitter": "https://twitter.com/lordvservices",
+    "linkedin": "https://linkedin.com/company/lordvservices",
+    "instagram": "https://instagram.com/lordvservices"
+  }
+}

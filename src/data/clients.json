@@ -1,0 +1,52 @@
+{
+  "clients": [
+    {
+      "id": 1,
+      "name": "TechCorp Solutions",
+      "logo": "/assets/clients/techcorp.png",
+      "industry": "Technology",
+      "project": "Enterprise Web Application",
+      "testimonial": "Lord V Services delivered an exceptional web application that exceeded our expectations. Their attention to detail and technical expertise is unmatched."
+    },
+    {
+      "id": 2,
+      "name": "MediCare Plus",
+      "logo": "/assets/clients/medicare.png",
+      "industry": "Healthcare",
+      "project": "Patient Management System",
+      "testimonial": "The healthcare management system they built has streamlined our operations and improved patient care significantly."
+    },
+    {
+      "id": 3,
+      "name": "EduTech Academy",
+      "logo": "/assets/clients/edutech.png",
+      "industry": "Education",
+      "project": "Learning Management Platform",
+      "testimonial": "Their LMS platform has revolutionized how we deliver education to our students. Highly recommended!"
+    },
+    {
+      "id": 4,
+      "name": "RetailMax",
+      "logo": "/assets/clients/retailmax.png",
+      "industry": "E-commerce",
+      "project": "Online Store Platform",
+      "testimonial": "Our online sales have increased by 300% since implementing their e-commerce solution. Outstanding work!"
+    },
+    {
+      "id": 5,
+      "name": "FinanceFirst",
+      "logo": "/assets/clients/financefirst.png",
+      "industry": "Finance",
+      "project": "Mobile Banking App",
+      "testimonial": "The mobile banking app they developed is secure, user-friendly, and has received excellent feedback from our customers."
+    },
+    {
+      "id": 6,
+      "name": "BuildPro Construction",
+      "logo": "/assets/clients/buildpro.png",
+      "industry": "Construction",
+      "project": "Project Management System",
+      "testimonial": "Their project management system has helped us organize our construction projects more efficiently than ever before."
+    }
+  ]
+}
