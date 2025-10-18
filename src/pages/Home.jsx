@@ -275,7 +275,9 @@ const Home = () => {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Visit our Office</h3>
               <p className="text-gray-600 mb-4">You are most welcome to visit our office in Pune</p>
-              <p className="text-gray-600">60 Feet Road, Near Bhairavnath Gas Agency, Opp. Amazon Prime, Pimple Gurav, District - Pune, Maharashtra</p>
+              <p className="text-gray-600">60 Feet Rd, opp. Amazon Prime, near Bhairavnath Bharat Gas Agency<br />
+              Shivneri Colony, Agrasen Nagar Society<br />
+              Pimple Gurav, Pimpri-Chinchwad, Maharashtra 411061</p>
             </div>
           </div>
         </div>

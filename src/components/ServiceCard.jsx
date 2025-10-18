@@ -2,7 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const ServiceCard = ({ service }) => {
-  const getServiceImage = (iconName) => {
+  const getServiceImage = (iconName, serviceTitle) => {
+    // Special handling for Deep Cleaning service
+    if (serviceTitle === 'Deep Cleaning Services') {
+      return '/assets/services/Deep_Cleaning.jpg'
+    }
+    
     const serviceImages = {
       facility: '/assets/services/facility_property_management.jpg',
       housekeeping: '/assets/services/Housekeeping1.jpg',
@@ -20,7 +25,7 @@ const ServiceCard = ({ service }) => {
       <div className="mb-6">
         <div className="w-full h-48 mb-4 rounded-lg overflow-hidden">
           <img 
-            src={getServiceImage(service.icon)} 
+            src={getServiceImage(service.icon, service.title)} 
             alt={service.title}
             className="w-full h-full object-cover"
           />
