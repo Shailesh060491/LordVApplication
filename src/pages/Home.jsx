@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
+import emailjs from '@emailjs/browser'
+import { EMAILJS_CONFIG } from '../config/emailjs'
 import Hero from '../components/Hero.jsx'
 import ServiceCard from '../components/ServiceCard.jsx'
 // import servicesData from '../data/services.json'
@@ -8,6 +10,73 @@ import ServiceCard from '../components/ServiceCard.jsx'
 // import siteData from '../data/site.json'
 
 const Home = () => {
+  // Form state for Get in Touch section
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    service: '',
+    location: ''
+  })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    })
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    
+    // Validate form
+    if (!formData.name || !formData.email) {
+      alert('Please fill in Name and Email fields')
+      return
+    }
+
+    setIsSubmitting(true)
+
+    try {
+      // Initialize EmailJS with your public key
+      emailjs.init(EMAILJS_CONFIG.PUBLIC_KEY)
+      
+      // Send email using EmailJS
+      const result = await emailjs.send(
+        EMAILJS_CONFIG.SERVICE_ID,
+        EMAILJS_CONFIG.TEMPLATE_ID,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          phone: formData.phone,
+          company: formData.location, // Using location as company
+          service: formData.service,
+          message: `Quick inquiry from Home page - Service: ${formData.service}, Location: ${formData.location}`,
+          to_email: EMAILJS_CONFIG.TO_EMAIL
+        }
+      )
+      
+      console.log('Email sent successfully:', result)
+      alert('Thank you for your inquiry! We will get back to you soon.')
+      
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        service: '',
+        location: ''
+      })
+      
+    } catch (error) {
+      console.error('Failed to send email:', error)
+      alert('Failed to send message. Please try again or contact us directly at support@lordvservices.com')
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
   // Services data from documentation
   const featuredServices = [
     { id: 1, title: "Facility and Property Management", description: "Comprehensive property upkeep, repair, operations, and compliance management for residential and commercial sites.", icon: "facility", features: ["Property upkeep & inspections", "Daily operations", "Compliance audits", "Vendor coordination"], price: "Contact for Quote" },
@@ -90,39 +159,73 @@ const Home = () => {
             <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
               Get in touch with our expert team
             </h3>
-            <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <input
                 type="text"
+                name="name"
                 placeholder="Name"
+                value={formData.name}
+                onChange={handleChange}
+                required
                 className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               />
               <input
                 type="email"
+                name="email"
                 placeholder="Email"
+                value={formData.email}
+                onChange={handleChange}
+                required
                 className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               />
               <input
                 type="tel"
+                name="phone"
                 placeholder="Phone"
+                value={formData.phone}
+                onChange={handleChange}
                 className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               />
-              <select className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                <option>Select Service</option>
-                <option>Housekeeping</option>
-                <option>Security</option>
-                <option>Facility</option>
-                <option>Event Management</option>
+              <select 
+                name="service"
+                value={formData.service}
+                onChange={handleChange}
+                className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              >
+                <option value="">Select Service</option>
+                <option value="Housekeeping">Housekeeping</option>
+                <option value="Security">Security</option>
+                <option value="Facility">Facility</option>
+                <option value="Event Management">Event Management</option>
               </select>
               <input
                 type="text"
+                name="location"
                 placeholder="Location"
+                value={formData.location}
+                onChange={handleChange}
                 className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               />
               <button
                 type="submit"
-                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-200 shadow-lg hover:shadow-xl"
+                disabled={isSubmitting}
+                className={`py-3 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl ${
+                  isSubmitting 
+                    ? 'bg-gray-400 cursor-not-allowed' 
+                    : 'bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700'
+                }`}
               >
-                Submit
+                {isSubmitting ? (
+                  <div className="flex items-center justify-center">
+                    <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    Sending...
+                  </div>
+                ) : (
+                  'Submit'
+                )}
               </button>
             </form>
           </div>
