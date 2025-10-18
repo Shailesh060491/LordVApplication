@@ -2,10 +2,10 @@
 // Replace these with your actual EmailJS credentials
 
 export const EMAILJS_CONFIG = {
-  // Get these from your EmailJS account at https://www.emailjs.com/
-  PUBLIC_KEY: 'YOUR_PUBLIC_KEY', // Replace with your public key
-  SERVICE_ID: 'YOUR_SERVICE_ID', // Replace with your service ID
-  TEMPLATE_ID: 'YOUR_TEMPLATE_ID', // Replace with your template ID
+  // EmailJS credentials
+  PUBLIC_KEY: '_5Bd06H99FOapknzX',
+  SERVICE_ID: 'service_b912lu9',
+  TEMPLATE_ID: 'template_iobli0p',
   
   // Email settings
   TO_EMAIL: 'support@lordvservices.com',
