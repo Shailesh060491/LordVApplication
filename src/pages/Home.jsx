@@ -31,8 +31,8 @@ const Home = () => {
     e.preventDefault()
     
     // Validate form
-    if (!formData.name || !formData.email) {
-      alert('Please fill in Name and Email fields')
+    if (!formData.name || !formData.email || !formData.phone) {
+      alert('Please fill in Name, Email, and Phone fields')
       return
     }
 
@@ -184,6 +184,7 @@ const Home = () => {
                 placeholder="Phone"
                 value={formData.phone}
                 onChange={handleChange}
+                required
                 className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               />
               <select 
