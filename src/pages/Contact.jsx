@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { Helmet } from 'react-helmet-async'
+import emailjs from '@emailjs/browser'
+import { EMAILJS_CONFIG } from '../config/emailjs'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +12,7 @@ const Contact = () => {
     service: '',
     message: ''
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
   const handleChange = (e) => {
     setFormData({
@@ -18,11 +21,55 @@ const Contact = () => {
     })
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    // Handle form submission
-    console.log('Form submitted:', formData)
-    alert('Thank you for your inquiry! We will get back to you soon.')
+    
+    // Validate form
+    if (!formData.name || !formData.email || !formData.message) {
+      alert('Please fill in all required fields (Name, Email, Message)')
+      return
+    }
+
+    setIsSubmitting(true)
+
+    try {
+      // Initialize EmailJS with your public key
+      emailjs.init(EMAILJS_CONFIG.PUBLIC_KEY)
+      
+      // Send email using EmailJS
+      const result = await emailjs.send(
+        EMAILJS_CONFIG.SERVICE_ID,
+        EMAILJS_CONFIG.TEMPLATE_ID,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          phone: formData.phone,
+          company: formData.company,
+          service: formData.service,
+          message: formData.message,
+          to_email: EMAILJS_CONFIG.TO_EMAIL
+        }
+      )
+      
+      console.log('Email sent successfully:', result)
+      alert('Thank you for your inquiry! We will get back to you soon.')
+      
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        company: '',
+        service: '',
+        message: ''
+      })
+      
+    } catch (error) {
+      console.error('Failed to send email:', error)
+      alert('Failed to send message. Please try again or contact us directly at support@lordvservices.com')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const services = [
@@ -169,9 +216,24 @@ const Contact = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-4 rounded-lg font-semibold text-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-200 shadow-lg hover:shadow-xl"
+                  disabled={isSubmitting}
+                  className={`w-full py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl ${
+                    isSubmitting 
+                      ? 'bg-gray-400 cursor-not-allowed' 
+                      : 'bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700'
+                  }`}
                 >
-                  Send Message
+                  {isSubmitting ? (
+                    <div className="flex items-center justify-center">
+                      <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                      </svg>
+                      Sending...
+                    </div>
+                  ) : (
+                    'Send Message'
+                  )}
                 </button>
               </form>
             </div>
