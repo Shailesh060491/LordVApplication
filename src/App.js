@@ -13,7 +13,8 @@ import About from './pages/About.jsx'
 import Services from './pages/Services.jsx'
 import ServiceDetail from './pages/ServiceDetail.jsx'
 import Industries from './pages/Industries.jsx'
-import Training from './pages/Training.jsx'
+import Expertise from './pages/Expertise.jsx'
+import Payroll from './pages/Payroll.jsx'
 import Gallery from './pages/Gallery.jsx'
 import Clients from './pages/Clients.jsx'
 import Contact from './pages/Contact.jsx'
@@ -23,7 +24,7 @@ function App() {
     <HelmetProvider>
       <Router>
         <ScrollToTop />
-        <div className="min-h-screen bg-gray-50 flex flex-col">
+        <div className="min-h-screen flex flex-col">
           <Header />
           <main className="flex-grow">
             <Routes>
@@ -32,7 +33,8 @@ function App() {
               <Route path="/services" element={<Services />} />
               <Route path="/services/:id" element={<ServiceDetail />} />
               <Route path="/industries" element={<Industries />} />
-              <Route path="/training" element={<Training />} />
+              <Route path="/expertise" element={<Expertise />} />
+              <Route path="/payroll" element={<Payroll />} />
               <Route path="/gallery" element={<Gallery />} />
               <Route path="/clients" element={<Clients />} />
               <Route path="/contact" element={<Contact />} />

@@ -2,51 +2,91 @@
   "clients": [
     {
       "id": 1,
-      "name": "TechCorp Solutions",
-      "logo": "/assets/clients/techcorp.png",
-      "industry": "Technology",
-      "project": "Enterprise Web Application",
-      "testimonial": "Lord V Services delivered an exceptional web application that exceeded our expectations. Their attention to detail and technical expertise is unmatched."
+      "name": "Deputy Secretary - Shivaji Nagar",
+      "logo": "/assets/clients/government.png",
+      "industry": "Government",
+      "project": "Government Office Management",
+      "testimonial": "Professional facility management services that maintain the highest standards of cleanliness and security for our government office."
     },
     {
       "id": 2,
-      "name": "MediCare Plus",
-      "logo": "/assets/clients/medicare.png",
-      "industry": "Healthcare",
-      "project": "Patient Management System",
-      "testimonial": "The healthcare management system they built has streamlined our operations and improved patient care significantly."
+      "name": "Director - Shivaji Nagar",
+      "logo": "/assets/clients/director.png",
+      "industry": "Government",
+      "project": "Director Office Management",
+      "testimonial": "Excellent housekeeping and security services that ensure a clean and safe working environment for our staff."
     },
     {
       "id": 3,
-      "name": "EduTech Academy",
-      "logo": "/assets/clients/edutech.png",
+      "name": "Dnyanganga English Medium School",
+      "logo": "/assets/clients/dnyanganga.png",
       "industry": "Education",
-      "project": "Learning Management Platform",
-      "testimonial": "Their LMS platform has revolutionized how we deliver education to our students. Highly recommended!"
+      "project": "School Facility Management",
+      "testimonial": "Outstanding facility management services that create a safe and clean environment for our students and staff."
     },
     {
       "id": 4,
-      "name": "RetailMax",
-      "logo": "/assets/clients/retailmax.png",
-      "industry": "E-commerce",
-      "project": "Online Store Platform",
-      "testimonial": "Our online sales have increased by 300% since implementing their e-commerce solution. Outstanding work!"
+      "name": "Silver Crest English Medium School",
+      "logo": "/assets/clients/silvercrest.png",
+      "industry": "Education",
+      "project": "School Maintenance Services",
+      "testimonial": "Professional housekeeping and maintenance services that keep our school premises clean and well-maintained."
     },
     {
       "id": 5,
-      "name": "FinanceFirst",
-      "logo": "/assets/clients/financefirst.png",
-      "industry": "Finance",
-      "project": "Mobile Banking App",
-      "testimonial": "The mobile banking app they developed is secure, user-friendly, and has received excellent feedback from our customers."
+      "name": "IndoGlobal Softsolution & Technologies Pvt. Ltd.",
+      "logo": "/assets/clients/indoglobal.png",
+      "industry": "Technology",
+      "project": "Corporate Office Management",
+      "testimonial": "Comprehensive facility management for our IT company with 24/7 support and professional staff."
     },
     {
       "id": 6,
-      "name": "BuildPro Construction",
-      "logo": "/assets/clients/buildpro.png",
-      "industry": "Construction",
-      "project": "Project Management System",
-      "testimonial": "Their project management system has helped us organize our construction projects more efficiently than ever before."
+      "name": "Zeal College of Engineering and Research",
+      "logo": "/assets/clients/zeal.png",
+      "industry": "Education",
+      "project": "College Facility Management",
+      "testimonial": "Excellent security and housekeeping services that maintain a clean and secure environment for our college campus."
+    },
+    {
+      "id": 7,
+      "name": "Government Polytechnic Avasari Khurd",
+      "logo": "/assets/clients/polytechnic.png",
+      "industry": "Education",
+      "project": "Polytechnic College Management",
+      "testimonial": "Professional facility management services that ensure our polytechnic college maintains high standards of cleanliness and security."
+    },
+    {
+      "id": 8,
+      "name": "Dassault System - Hinjewadi",
+      "logo": "/assets/clients/dassault.png",
+      "industry": "Technology",
+      "project": "Corporate Office Management",
+      "testimonial": "Comprehensive facility management for our corporate office with 24/7 support and professional staff."
+    },
+    {
+      "id": 9,
+      "name": "Smart Work Eq43 - Balewadi",
+      "logo": "/assets/clients/smartwork.png",
+      "industry": "Technology",
+      "project": "Co-working Space Management",
+      "testimonial": "Professional facility management services that maintain a clean and productive environment for our co-working space."
+    },
+    {
+      "id": 10,
+      "name": "DIT Education Foundation (Wellington College)",
+      "logo": "/assets/clients/wellington.png",
+      "industry": "Education",
+      "project": "School Facility Management",
+      "testimonial": "Excellent housekeeping and security services that create a safe and clean environment for our students and staff."
+    },
+    {
+      "id": 11,
+      "name": "Eon IT WeWork - Koregaon Park",
+      "logo": "/assets/clients/wework.png",
+      "industry": "Technology",
+      "project": "Co-working Space Management",
+      "testimonial": "Professional facility management services that maintain a clean and productive environment for our WeWork space."
     }
   ]
 }

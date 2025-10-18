@@ -8,23 +8,23 @@ import ServiceCard from '../components/ServiceCard.jsx'
 // import siteData from '../data/site.json'
 
 const Home = () => {
-  // Temporary test data
+  // Services data from documentation
   const featuredServices = [
-    { id: 1, title: "Security Services", description: "Comprehensive security solutions with manned guarding and access control", icon: "security", features: ["Manned Guards", "Access Control"], price: "₹15,000/month" },
-    { id: 2, title: "Facility Management", description: "Complete facility management including maintenance and utilities", icon: "facility", features: ["Building Maintenance", "Utilities Management"], price: "₹25,000/month" },
-    { id: 3, title: "Housekeeping Services", description: "Professional cleaning and sanitization services", icon: "housekeeping", features: ["Daily Cleaning", "Sanitization"], price: "₹8,000/month" }
+    { id: 1, title: "Facility and Property Management", description: "Comprehensive property upkeep, repair, operations, and compliance management for residential and commercial sites.", icon: "facility", features: ["Property upkeep & inspections", "Daily operations", "Compliance audits", "Vendor coordination"], price: "Contact for Quote" },
+    { id: 2, title: "Housekeeping Services", description: "Routine cleaning and hygiene maintenance using eco-friendly products with trained and uniformed staff.", icon: "housekeeping", features: ["Daily cleaning & sanitization", "Waste management", "Deep cleaning", "Eco-friendly materials"], price: "Contact for Quote" },
+    { id: 3, title: "Security & Technical Staff", description: "Trained security guards, bouncers, and technical maintenance personnel with modern equipment.", icon: "security", features: ["24/7 security services", "Trained guards & bouncers", "Technical staff", "Safety compliance"], price: "Contact for Quote" }
   ]
   const featuredClients = [
-    { id: 1, name: "Wipro Limited", industry: "IT Services", testimonial: "Excellent security and facility management services. Lord V Services has been our trusted partner for over 4 years.", project: "Corporate Campus Management" },
-    { id: 2, name: "Max Healthcare", industry: "Healthcare", testimonial: "Professional housekeeping and security services that maintain the highest hygiene and safety standards.", project: "Hospital Management" },
-    { id: 3, name: "Godrej Properties", industry: "Real Estate", testimonial: "Comprehensive facility management for our premium residential and commercial properties with 24/7 support.", project: "Property Management" }
+    { id: 1, name: "Deputy Secretary - Shivaji Nagar", industry: "Government", testimonial: "Professional facility management services that maintain the highest standards of cleanliness and security.", project: "Government Office Management" },
+    { id: 2, name: "Dnyanganga English Medium School", industry: "Education", testimonial: "Excellent housekeeping and security services that create a safe and clean environment for our students.", project: "School Facility Management" },
+    { id: 3, name: "Dassault System - Hinjewadi", industry: "Technology", testimonial: "Comprehensive facility management for our corporate office with 24/7 support and professional staff.", project: "Corporate Office Management" }
   ]
 
   return (
     <>
       <Helmet>
-        <title>Lord V Services - Security & Facilities Management Solutions</title>
-        <meta name="description" content="Leading provider of comprehensive security services, facility management, housekeeping, and asset management solutions" />
+        <title>Lord V Services - Trusted Facility Management & Labor Services Across Pune</title>
+        <meta name="description" content="Leading facility management and labor services company based in Pune, Maharashtra, delivering clean, secure, and efficient solutions to residential, commercial, and industrial clients." />
       </Helmet>
 
       <Hero />
@@ -35,8 +35,11 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Cost-effective management that keeps your facility running smoothly.
+                Trusted Facility Management & Labor Services Across Pune
               </h2>
+              <p className="text-xl text-gray-600 mb-6">
+                Delivering Clean, Secure, and Efficient Solutions to Residential, Commercial, and Industrial Clients
+              </p>
               <Link
                 to="/about"
                 className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-200 shadow-lg hover:shadow-xl inline-block"
@@ -47,24 +50,20 @@ const Home = () => {
             
             <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-2">35+</div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">6</div>
                 <div className="text-gray-600">Years of Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-green-600 mb-2">500+</div>
+                <div className="text-3xl font-bold text-green-600 mb-2">360</div>
                 <div className="text-gray-600">Professional Team</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-purple-600 mb-2">1100+</div>
+                <div className="text-3xl font-bold text-purple-600 mb-2">11</div>
                 <div className="text-gray-600">Happy Clients</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-orange-600 mb-2">25+</div>
-                <div className="text-gray-600">Awards</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-red-600 mb-2">7+</div>
-                <div className="text-gray-600">Cities</div>
+                <div className="text-3xl font-bold text-orange-600 mb-2">Pan India</div>
+                <div className="text-gray-600">Client Served</div>
               </div>
             </div>
           </div>
@@ -72,19 +71,22 @@ const Home = () => {
       </section>
 
       {/* Company Description */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white/70 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Best Security Services Company India
+              Welcome to Lord V Services Pvt. Ltd.
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Lord V Services is a built-up Security Company in India and is into security and facility management services. At Lord V we provide "one-stop innovative total property solutions." We have an honorable spot in the market to offer the best security and facility management service in India. With an extensive experience of over 35 years, our Security Services in India are validated and allowed by Government. We provide you with all kinds of security and housekeeping-related services like Electronic security services, Bouncers, Female Security Guards, housekeepers, facility managers, Soft facility management, and so on. All enormous MNCs, BPOs, Commercial Hubs, Real Estate Sites, and Residential Complexes go under our client list. You can likewise enlist us for shopping malls, ATMs, Banks, emergency clinics, individual firms, events, etc.
+              Established in 2019 and based in Pune, Maharashtra, Lord V Services Pvt. Ltd. stands as a premier facility management and labor services company committed to delivering exceptional value through comprehensive, integrated solutions. With over six years of dedicated service in the industry, we have built a reputation for reliability, professionalism, and unwavering commitment to client satisfaction.
+            </p>
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed mt-6">
+              At Lord V Services, we understand that maintaining clean, secure, and efficient environments is essential for the success of any residential, commercial, or industrial establishment. Our mission is to listen and respond to our clients' unique needs, providing high-quality, reliable, and eco-friendly facility and labor management services that set new industry standards.
             </p>
           </div>
 
           {/* Quick Contact Form */}
-          <div className="bg-white rounded-xl shadow-lg p-8 max-w-4xl mx-auto">
+          <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-8 max-w-4xl mx-auto border border-white/20">
             <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
               Get in touch with our expert team
             </h3>
@@ -105,15 +107,11 @@ const Home = () => {
                 className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               />
               <select className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                <option>Services</option>
-                <option>Security Services</option>
-                <option>Housekeeping Services</option>
-                <option>Facility Management</option>
-                <option>Electronic Security</option>
-                <option>Third-Party Outsourcing</option>
-                <option>Asset Management</option>
-                <option>Soft Services</option>
-                <option>Cash Management</option>
+                <option>Select Service</option>
+                <option>Housekeeping</option>
+                <option>Security</option>
+                <option>Facility</option>
+                <option>Event Management</option>
               </select>
               <input
                 type="text"
@@ -137,10 +135,10 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                At Lord V security services our guards are immensely trained to deal with any kind of security circumstances, whether it is controlling a massive crowd or handling a threatening case, our skilled guardsmen are always ready to manage the situation. Moreover, they are equipped with the latest technology and safety instruments to use in critical situations. We are a security company in India with skillful employees who are aware of using all types of modern equipped instruments. All of our guards possess the knowledge of self-defense techniques that are considered an essential part of the security service.
+                Our skilled workforce is rigorously trained in all aspects of facility management, from routine housekeeping and deep cleaning to specialized maintenance services including marble polishing, garden upkeep, and technical support. We also provide expert security services with trained guards and bouncers equipped with modern safety tools and self-defense expertise.
               </p>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Lord V security services are committed to providing the best Security Services in India with a strong team working 24X7, just for you. We have a team of extremely knowledgeable and qualified managers who have created a pre-determined plan to conquer any requirements of the customers. They always have a strategy to solve any problem effortlessly without panic. We aim to provide a secure environment to our customers by providing them with the best housekeeping services.
+                What sets us apart is our comprehensive approach to service delivery. Beyond traditional facility management, we offer consulting services to help businesses navigate complex labor laws and optimize workforce management, ensuring compliance with regulations such as EPF, ESI, Minimum Wages Act, and other statutory requirements.
               </p>
               <Link
                 to="/about"
@@ -153,15 +151,15 @@ const Home = () => {
             <div className="grid grid-cols-1 gap-6">
               <div className="bg-gray-50 p-6 rounded-xl">
                 <h3 className="text-xl font-bold text-gray-900 mb-4">OUR VISION</h3>
-                <p className="text-gray-600">To be the leading provider of comprehensive security and facility management solutions across India.</p>
+                <p className="text-gray-600">Aspirational goal to be the leading facility management company delivering exceptional value.</p>
               </div>
               <div className="bg-gray-50 p-6 rounded-xl">
                 <h3 className="text-xl font-bold text-gray-900 mb-4">OUR VALUES</h3>
-                <p className="text-gray-600">Integrity, professionalism, and commitment to excellence in every service we provide.</p>
+                <p className="text-gray-600">Integrity, professionalism, customer focus, continuous improvement.</p>
               </div>
               <div className="bg-gray-50 p-6 rounded-xl">
                 <h3 className="text-xl font-bold text-gray-900 mb-4">OUR MISSION</h3>
-                <p className="text-gray-600">To ensure safety, security, and operational excellence for all our clients through innovative solutions.</p>
+                <p className="text-gray-600">Commitment to client needs through high-quality, eco-friendly services.</p>
               </div>
             </div>
           </div>
@@ -169,11 +167,11 @@ const Home = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white/60 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Lord V Group specializes in providing the following services
+              Lord V Services specializes in providing the following services
             </h2>
           </div>
 
@@ -207,26 +205,30 @@ const Home = () => {
       </section>
 
       {/* Clients Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white/70 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              WHAT OUR CUSTOMERS SAY
+              WHAT OUR CEO SAYS
             </h2>
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <div className="bg-gray-50 p-8 rounded-xl text-center">
+            <div className="bg-white/80 backdrop-blur-sm p-8 rounded-xl text-center border border-white/30 shadow-lg">
               <p className="text-lg text-gray-700 italic mb-6">
-                "Some of the finer nuances are never seen in any of the classical textbooks, and your simple yet practical tips had made the subject easily comprehensible to all of us."
+                "Over the past 6 years, we have built Lord V Services with a simple vision - to provide exceptional facility management and security services that our clients can trust. Our team of 360+ professionals, including ex-servicemen, ensures that every client receives the highest quality service. We take pride in our 24/7 support and the peace of mind we provide to our 11+ satisfied clients across Pune."
               </p>
               <div className="flex items-center justify-center">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
-                  YP
+                <div className="w-16 h-16 rounded-full overflow-hidden mr-4 shadow-lg">
+                  <img
+                    src="/assets/gallery/Ceo.jpg"
+                    alt="Mr. Sahebrao Rautwar - Founder & CEO"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="text-left">
-                  <div className="font-semibold text-gray-900">Yogesh Parekh</div>
-                  <div className="text-gray-600">CEO, Alpha Software LLP</div>
+                  <div className="font-semibold text-gray-900">Mr. Sahebrao Rautwar</div>
+                  <div className="text-gray-600">Founder & CEO, Lord V Services Pvt. Ltd.</div>
                 </div>
               </div>
             </div>
@@ -235,10 +237,10 @@ const Home = () => {
       </section>
 
       {/* Contact Information */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white/60 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-xl shadow-lg text-center">
+            <div className="bg-white/90 backdrop-blur-sm p-8 rounded-xl shadow-lg text-center border border-white/20">
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -246,12 +248,12 @@ const Home = () => {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Chat with an expert</h3>
               <p className="text-gray-600 mb-4">We would be happy to answer your questions</p>
-              <a href="tel:+918412087700" className="text-blue-600 hover:text-blue-700 font-semibold">
-                +91 8412087700
+              <a href="tel:+919226551568" className="text-blue-600 hover:text-blue-700 font-semibold">
+                +91 9226551568
               </a>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-lg text-center">
+            <div className="bg-white/90 backdrop-blur-sm p-8 rounded-xl shadow-lg text-center border border-white/20">
               <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -259,12 +261,12 @@ const Home = () => {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Drop a Line</h3>
               <p className="text-gray-600 mb-4">Feel free to share your comments</p>
-              <a href="mailto:info@lordvservices.com" className="text-blue-600 hover:text-blue-700 font-semibold">
-                info@lordvservices.com
+              <a href="mailto:support@lordvservices.com" className="text-blue-600 hover:text-blue-700 font-semibold">
+                support@lordvservices.com
               </a>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-lg text-center">
+            <div className="bg-white/90 backdrop-blur-sm p-8 rounded-xl shadow-lg text-center border border-white/20">
               <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -272,17 +274,17 @@ const Home = () => {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Visit our Office</h3>
-              <p className="text-gray-600 mb-4">You are most welcome to visit our office in New Delhi</p>
-              <p className="text-gray-600">New Delhi, India</p>
+              <p className="text-gray-600 mb-4">You are most welcome to visit our office in Pune</p>
+              <p className="text-gray-600">60 Feet Road, Near Bhairavnath Gas Agency, Opp. Amazon Prime, Pimple Gurav, District - Pune, Maharashtra</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white/70 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl p-8 text-center text-white">
+          <div className="bg-gradient-to-r from-red-600 to-yellow-600 rounded-xl p-8 text-center text-white">
             <h2 className="text-3xl font-bold mb-4">
               We provide a high quality, tailored facility management service.
             </h2>
@@ -292,12 +294,12 @@ const Home = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               <div>
                 <h3 className="text-xl font-semibold mb-4">Connect Us</h3>
-                <p className="mb-2">Tel: +91 8412087700</p>
-                <p>Email: info@lordvservices.com</p>
+                <p className="mb-2">Tel: +91 9226551568</p>
+                <p>Email: support@lordvservices.com</p>
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-4">What We Do</h3>
-                <p>Security Services • Housekeeping • Facility Management • Electronic Security • Third-Party Outsourcing • Asset Management</p>
+                <p>Facility Management • Housekeeping • Garden Maintenance • Contract Labor • Security & Technical Staff • Event Management • Consulting & Compliance</p>
               </div>
             </div>
           </div>

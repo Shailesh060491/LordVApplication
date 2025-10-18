@@ -2,67 +2,67 @@
   "services": [
     {
       "id": 1,
-      "title": "Security Services",
-      "description": "Comprehensive security solutions including manned guarding, access control, and security monitoring to protect your premises and assets.",
-      "icon": "security",
-      "features": ["Manned Security Guards", "Access Control Systems", "Security Monitoring", "Emergency Response"],
-      "price": "Starting from ₹15,000/month"
+      "title": "Facility and Property Management",
+      "description": "Comprehensive property upkeep, repair, operations, and compliance management for residential and commercial sites.",
+      "icon": "facility",
+      "features": ["Property upkeep & inspections", "Daily operations (security, waste, utilities, parking)", "Compliance audits (safety, environment, labor laws)", "Vendor & staff coordination"],
+      "price": "Contact for Quote"
     },
     {
       "id": 2,
       "title": "Housekeeping Services",
-      "description": "Professional housekeeping and cleaning services to maintain clean, hygienic, and well-organized facilities.",
+      "description": "Routine cleaning and hygiene maintenance using eco-friendly products with trained and uniformed housekeeping staff.",
       "icon": "housekeeping",
-      "features": ["Daily Cleaning", "Deep Cleaning", "Sanitization", "Waste Management"],
-      "price": "Starting from ₹8,000/month"
+      "features": ["Daily cleaning & sanitization", "Waste management & pest control", "Deep cleaning & maintenance", "Washroom and kitchen upkeep", "Garden/exterior cleaning", "Use of eco-friendly materials", "Trained and uniformed housekeeping staff"],
+      "price": "Contact for Quote"
     },
     {
       "id": 3,
-      "title": "Facility Management",
-      "description": "Complete facility management solutions including maintenance, utilities management, and infrastructure upkeep.",
-      "icon": "facility",
-      "features": ["Building Maintenance", "Utilities Management", "Infrastructure Upkeep", "Vendor Management"],
-      "price": "Starting from ₹25,000/month"
+      "title": "Garden Maintenance",
+      "description": "Landscaping, trimming, lawn care, and outdoor upkeep with professional garden maintenance services.",
+      "icon": "garden",
+      "features": ["Regular lawn mowing and watering", "Pruning & shaping plants", "Landscaping design & seasonal cleanup", "Weed & pest control", "Irrigation management", "Soil testing and conditioning"],
+      "price": "Contact for Quote"
     },
     {
       "id": 4,
-      "title": "Electronic Security",
-      "description": "Advanced electronic security systems including CCTV surveillance, alarm systems, and access control technology.",
-      "icon": "electronic",
-      "features": ["CCTV Surveillance", "Alarm Systems", "Access Control", "Fire Safety Systems"],
-      "price": "Starting from ₹30,000/month"
+      "title": "Contract Labor Supply",
+      "description": "Skilled and unskilled labor on a contract basis for various operational needs with competitive pricing.",
+      "icon": "labor",
+      "features": ["Skilled labor supply", "Unskilled labor supply", "Contract-based services", "Flexible workforce solutions", "Competitive pricing"],
+      "price": "Contact for Quote"
     },
     {
       "id": 5,
-      "title": "Third-Party Outsourcing",
-      "description": "Comprehensive outsourcing solutions for various business functions to improve efficiency and reduce operational costs.",
-      "icon": "outsourcing",
-      "features": ["HR Outsourcing", "Admin Services", "Support Services", "Specialized Services"],
-      "price": "Starting from ₹20,000/month"
+      "title": "Security & Technical Staff",
+      "description": "Trained security guards, bouncers, and technical maintenance personnel with modern equipment and safety compliance.",
+      "icon": "security",
+      "features": ["24/7 security services & monitoring", "Trained guards and professional bouncers", "Modern surveillance tools & safety equipment", "Technical staff for electrical, plumbing, HVAC", "Installation, repairs, and preventive maintenance", "Safety compliance and emergency handling"],
+      "price": "Contact for Quote"
     },
     {
       "id": 6,
-      "title": "Asset Management",
-      "description": "Professional asset management services including inventory control, maintenance tracking, and asset optimization.",
-      "icon": "asset",
-      "features": ["Inventory Management", "Asset Tracking", "Maintenance Scheduling", "Asset Optimization"],
-      "price": "Starting from ₹12,000/month"
+      "title": "Event Management Staffing",
+      "description": "Provision of skilled manpower for event planning, coordination, and crowd management with professional event support.",
+      "icon": "event",
+      "features": ["Event coordinators and supervisors", "Trained security & bouncers for event safety", "On-ground support staff and logistics handlers", "Event planning and coordination", "Crowd management"],
+      "price": "Contact for Quote"
     },
     {
       "id": 7,
-      "title": "Soft Services",
-      "description": "Essential soft services including reception, concierge, mail handling, and administrative support.",
-      "icon": "soft",
-      "features": ["Reception Services", "Concierge", "Mail Handling", "Administrative Support"],
-      "price": "Starting from ₹10,000/month"
+      "title": "Consulting & Compliance Services",
+      "description": "Expert advisory and compliance management under EPF, ESI, Minimum Wages Act, Bonus Act and labor laws with documentation and audit assistance.",
+      "icon": "consulting",
+      "features": ["EPF, ESI, Minimum Wages Act compliance", "Bonus Act and labor laws", "Documentation and audit assistance", "Expert advisory services", "Compliance management"],
+      "price": "Contact for Quote"
     },
     {
       "id": 8,
-      "title": "Cash Management",
-      "description": "Secure cash management services including cash collection, counting, and transportation with armed security.",
-      "icon": "cash",
-      "features": ["Cash Collection", "Cash Counting", "Secure Transportation", "Armed Escort"],
-      "price": "Starting from ₹18,000/month"
+      "title": "Deep Cleaning Services",
+      "description": "Comprehensive deep cleaning services for residential, commercial, and industrial facilities with specialized equipment and trained professionals.",
+      "icon": "housekeeping",
+      "features": ["Deep carpet and upholstery cleaning", "Kitchen and bathroom deep sanitization", "Window and glass cleaning", "Floor scrubbing and polishing", "Air duct and vent cleaning", "Post-construction cleanup", "Specialized equipment and eco-friendly products"],
+      "price": "Contact for Quote"
     }
   ]
 }

@@ -7,13 +7,18 @@ const Hero = () => {
   return (
     <>
       <Helmet>
-        <title>Lord V Services - Professional Web Development</title>
-        <meta name="description" content="Professional web development and design services" />
+        <title>Lord V Services - Trusted Facility Management & Labor Services Across Pune</title>
+        <meta name="description" content="Leading facility management and labor services company based in Pune, Maharashtra, delivering clean, secure, and efficient solutions." />
       </Helmet>
       
-      <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-purple-900 text-white overflow-hidden">
+      <section className="relative text-white overflow-hidden" style={{
+        backgroundImage: `url('/assets/hero/hero-main.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         {/* Background Pattern */}
-        <div className="absolute inset-0 bg-black opacity-20"></div>
+        <div className="absolute inset-0 bg-black opacity-60"></div>
         <div className="absolute inset-0" style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
         }}></div>
@@ -23,15 +28,14 @@ const Hero = () => {
             {/* Content */}
             <div className="space-y-8">
               <div className="space-y-4">
-                <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
-                  Leading Security & Facility
-                  <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-300">
-                    Management Solutions
+                <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-white drop-shadow-2xl">
+                  Your Business Deserves
+                  <span className="block text-transparent bg-clip-text bg-gradient-to-r from-red-200 to-yellow-200 drop-shadow-lg">
+                    Professional Excellence
                   </span>
-                  Provider
                 </h1>
-                <p className="text-xl lg:text-2xl text-blue-100 leading-relaxed max-w-2xl">
-                  Comprehensive security services, facility management, housekeeping, and asset management solutions for businesses across India.
+                <p className="text-xl lg:text-2xl text-white leading-relaxed max-w-2xl drop-shadow-lg">
+                  Experience the difference with our 24/7 security, spotless housekeeping, and expert facility management that keeps your business running smoothly.
                 </p>
               </div>
 
@@ -40,7 +44,7 @@ const Hero = () => {
                   to="/contact"
                   className="bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                 >
-                  Start Your Project
+                  Get Quote
                 </Link>
                 <Link
                   to="/services"
@@ -51,18 +55,18 @@ const Hero = () => {
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-3 gap-8 pt-8 border-t border-blue-700">
+              <div className="grid grid-cols-3 gap-8 pt-8 border-t border-white/30">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-300">50+</div>
-                  <div className="text-blue-200">Projects Completed</div>
+                  <div className="text-3xl font-bold text-white drop-shadow-lg">6</div>
+                  <div className="text-white/90 drop-shadow-md">Years Experience</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-purple-300">100%</div>
-                  <div className="text-blue-200">Client Satisfaction</div>
+                  <div className="text-3xl font-bold text-white drop-shadow-lg">360</div>
+                  <div className="text-white/90 drop-shadow-md">Professional Team</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-green-300">24/7</div>
-                  <div className="text-blue-200">Support</div>
+                  <div className="text-3xl font-bold text-white drop-shadow-lg">11</div>
+                  <div className="text-white/90 drop-shadow-md">Happy Clients</div>
                 </div>
               </div>
             </div>
@@ -70,20 +74,7 @@ const Hero = () => {
             {/* Security & Facility Management Illustration */}
             <div className="relative">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-                {/* Building/Facility Icon */}
-                <div className="flex justify-center mb-6">
-                  <div className="w-20 h-20 bg-white/20 rounded-xl flex items-center justify-center">
-                    <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                    </svg>
-                  </div>
-                </div>
-                
                 <div className="space-y-6">
-                  <div className="flex items-center justify-center space-x-4">
-                    <div className="w-4 h-4 bg-green-400 rounded-full animate-pulse"></div>
-                    <span className="text-blue-200 font-semibold">Professional Services</span>
-                  </div>
                   
                   {/* Service Icons Grid */}
                   <div className="grid grid-cols-2 gap-4">
@@ -93,7 +84,7 @@ const Hero = () => {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                         </svg>
                       </div>
-                      <span className="text-white text-sm">Security</span>
+                      <span className="text-white text-sm drop-shadow-md">Security</span>
                     </div>
                     <div className="bg-black/20 rounded-lg p-3 flex items-center space-x-3">
                       <div className="w-8 h-8 bg-blue-500/30 rounded-lg flex items-center justify-center">
@@ -101,7 +92,7 @@ const Hero = () => {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                         </svg>
                       </div>
-                      <span className="text-white text-sm">Facility</span>
+                      <span className="text-white text-sm drop-shadow-md">Facility</span>
                     </div>
                     <div className="bg-black/20 rounded-lg p-3 flex items-center space-x-3">
                       <div className="w-8 h-8 bg-purple-500/30 rounded-lg flex items-center justify-center">
@@ -109,7 +100,7 @@ const Hero = () => {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                         </svg>
                       </div>
-                      <span className="text-white text-sm">Housekeeping</span>
+                      <span className="text-white text-sm drop-shadow-md">Housekeeping</span>
                     </div>
                     <div className="bg-black/20 rounded-lg p-3 flex items-center space-x-3">
                       <div className="w-8 h-8 bg-orange-500/30 rounded-lg flex items-center justify-center">
@@ -117,7 +108,7 @@ const Hero = () => {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                         </svg>
                       </div>
-                      <span className="text-white text-sm">Asset Mgmt</span>
+                      <span className="text-white text-sm drop-shadow-md">Event Mgmt</span>
                     </div>
                   </div>
 
@@ -125,17 +116,17 @@ const Hero = () => {
                   <div className="bg-green-500/20 border border-green-400/30 rounded-lg p-3 text-center">
                     <div className="flex items-center justify-center space-x-2">
                       <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                      <span className="text-green-200 font-semibold text-sm">24/7 Support Available</span>
+                      <span className="text-white font-semibold text-sm drop-shadow-md">24/7 Support Available</span>
                     </div>
                   </div>
 
                   {/* Performance Indicator */}
                   <div className="space-y-2">
-                    <div className="flex justify-between text-blue-200 text-sm">
+                    <div className="flex justify-between text-white text-sm drop-shadow-md">
                       <span>Service Excellence</span>
-                      <span className="text-green-400">99%</span>
+                      <span className="text-green-300 drop-shadow-md">99%</span>
                     </div>
-                    <div className="w-full bg-blue-900 rounded-full h-2">
+                    <div className="w-full bg-white/20 rounded-full h-2">
                       <div className="bg-gradient-to-r from-green-400 to-blue-400 h-2 rounded-full" style={{width: '99%'}}></div>
                     </div>
                   </div>

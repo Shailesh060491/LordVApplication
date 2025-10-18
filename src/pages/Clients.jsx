@@ -5,87 +5,128 @@ const Clients = () => {
   const clientTestimonials = [
     {
       id: 1,
-      name: "Wipro Limited",
-      industry: "IT Services",
-      testimonial: "Lord V Services has been managing our corporate campus security and facility operations for over 4 years. Their professional approach and round-the-clock support have been outstanding.",
-      project: "Corporate Campus Management",
+      name: "Deputy Secretary – Shivaji Nagar",
+      industry: "Government",
+      testimonial: "Professional facility management services that maintain the highest standards of cleanliness and security for our government office.",
+      project: "Government Office Management",
       rating: 5,
-      services: ["Security Services", "Facility Management", "Housekeeping"]
+      services: ["Facility Management", "Security Services", "Housekeeping"],
+      logo: "/assets/clients/Deputy_Secretary_Shivaji_Nagar.jpg"
     },
     {
       id: 2,
-      name: "Max Healthcare",
-      industry: "Healthcare",
-      testimonial: "The housekeeping and security services provided by Lord V Services maintain the highest hygiene standards required for healthcare facilities. Their trained staff is exceptional.",
-      project: "Hospital Management",
+      name: "Director – Shivaji Nagar",
+      industry: "Government",
+      testimonial: "Excellent housekeeping and security services that ensure a clean and safe working environment for our staff.",
+      project: "Director Office Management",
       rating: 5,
-      services: ["Housekeeping", "Security Services", "Soft Services"]
+      services: ["Housekeeping", "Security Services", "Facility Management"],
+      logo: "/assets/clients/Director_Shivaji_Nagar.jpg"
     },
     {
       id: 3,
-      name: "Godrej Properties",
-      industry: "Real Estate",
-      testimonial: "Complete facility management for our premium residential and commercial properties. Lord V Services ensures our residents receive world-class services with 24/7 support.",
-      project: "Property Management",
+      name: "Dnyanganga English Medium School – Sinhgad",
+      industry: "Education",
+      testimonial: "Outstanding facility management services that create a safe and clean environment for our students and staff.",
+      project: "School Facility Management",
       rating: 5,
-      services: ["Facility Management", "Security Services", "Maintenance"]
+      services: ["Facility Management", "Housekeeping", "Security Services"],
+      logo: "/assets/clients/Dnyanganga_English_Medium_School_Sinhgad.jpg"
     },
     {
       id: 4,
-      name: "HDFC Bank",
-      industry: "Banking",
-      testimonial: "Professional security services including cash management and armed escort for our branches. Lord V Services provides reliable protection for our banking operations.",
-      project: "Banking Security",
+      name: "Silver Crest English Medium School",
+      industry: "Education",
+      testimonial: "Professional housekeeping and maintenance services that keep our school premises clean and well-maintained.",
+      project: "School Maintenance Services",
       rating: 5,
-      services: ["Security Services", "Cash Management", "Electronic Security"]
+      services: ["Housekeeping", "Maintenance", "Security Services"],
+      logo: "/assets/clients/Silver_Crest_English_Medium_School.jpg"
     },
     {
       id: 5,
-      name: "Medanta Hospital",
-      industry: "Healthcare",
-      testimonial: "Comprehensive housekeeping and security services that meet international healthcare standards. Lord V Services understands the critical requirements of medical facilities.",
-      project: "Healthcare Facility Management",
+      name: "IndoGlobal Softsolution & Technologies Pvt. Ltd.",
+      industry: "Technology",
+      testimonial: "Comprehensive facility management for our IT company with 24/7 support and professional staff.",
+      project: "Corporate Office Management",
       rating: 5,
-      services: ["Housekeeping", "Security Services", "Facility Management"]
+      services: ["Facility Management", "Security Services", "Housekeeping"],
+      logo: "/assets/clients/IndoGlobal.jpg"
     },
     {
       id: 6,
-      name: "Maruti Suzuki",
-      industry: "Manufacturing",
-      testimonial: "Industrial facility management including maintenance, security, and housekeeping for our manufacturing plants. Lord V Services provides consistent and reliable support.",
-      project: "Industrial Facility Management",
+      name: "Zeal College of Engineering and Research",
+      industry: "Education",
+      testimonial: "Excellent security and housekeeping services that maintain a clean and secure environment for our college campus.",
+      project: "College Facility Management",
       rating: 5,
-      services: ["Facility Management", "Security Services", "Housekeeping"]
+      services: ["Security Services", "Housekeeping", "Facility Management"],
+      logo: "/assets/clients/Zeal.jpg"
     },
     {
       id: 7,
-      name: "Kendriya Vidyalaya",
+      name: "Government Polytechnic Avasari Khurd",
       industry: "Education",
-      testimonial: "Complete facility management and security solutions for our educational institutions. Lord V Services ensures a safe and clean learning environment for our students.",
-      project: "Educational Institution Management",
+      testimonial: "Professional facility management services that ensure our polytechnic college maintains high standards of cleanliness and security.",
+      project: "Polytechnic College Management",
       rating: 5,
-      services: ["Facility Management", "Security Services", "Housekeeping"]
+      services: ["Facility Management", "Security Services", "Housekeeping"],
+      logo: "/assets/clients/Avsari_polytecnic.jpg"
     },
     {
       id: 8,
-      name: "Phoenix MarketCity",
-      industry: "Retail",
-      testimonial: "Comprehensive services for our shopping malls including security, housekeeping, and facility management. Lord V Services maintains high operational standards consistently.",
-      project: "Mall Management",
+      name: "Dassault System – Hinjewadi",
+      industry: "Technology",
+      testimonial: "Comprehensive facility management for our corporate office with 24/7 support and professional staff.",
+      project: "Corporate Office Management",
       rating: 5,
-      services: ["Security Services", "Housekeeping", "Facility Management"]
+      services: ["Facility Management", "Security Services", "Housekeeping"],
+      logo: "/assets/clients/Dassault.jpg"
+    },
+    {
+      id: 9,
+      name: "Smart Work Eq43 – Balewadi",
+      industry: "Technology",
+      testimonial: "Professional facility management services that maintain a clean and productive environment for our co-working space.",
+      project: "Co-working Space Management",
+      rating: 5,
+      services: ["Facility Management", "Housekeeping", "Security Services"],
+      logo: "/assets/clients/Smart_Work.jpg"
+    },
+    {
+      id: 10,
+      name: "DIT Education Foundation (Wellington College)",
+      industry: "Education",
+      testimonial: "Excellent housekeeping and security services that create a safe and clean environment for our students and staff.",
+      project: "School Facility Management",
+      rating: 5,
+      services: ["Housekeeping", "Security Services", "Facility Management"],
+      logo: "/assets/clients/Wellignton.jpg"
+    },
+    {
+      id: 11,
+      name: "Eon IT WeWork – Koregaon Park",
+      industry: "Technology",
+      testimonial: "Professional facility management services that maintain a clean and productive environment for our WeWork space.",
+      project: "Co-working Space Management",
+      rating: 5,
+      services: ["Facility Management", "Housekeeping", "Security Services"],
+      logo: "/assets/clients/wework.jpg"
     }
   ]
 
   const clientLogos = [
-    { name: "Wipro", industry: "IT Services" },
-    { name: "Max Healthcare", industry: "Healthcare" },
-    { name: "Godrej", industry: "Real Estate" },
-    { name: "HDFC", industry: "Banking" },
-    { name: "Medanta", industry: "Healthcare" },
-    { name: "Maruti Suzuki", industry: "Manufacturing" },
-    { name: "KV", industry: "Education" },
-    { name: "Phoenix", industry: "Retail" }
+    { name: "Deputy Secretary", industry: "Government", logo: "/assets/clients/Deputy_Secretary_Shivaji_Nagar.jpg" },
+    { name: "Director", industry: "Government", logo: "/assets/clients/Director_Shivaji_Nagar.jpg" },
+    { name: "Dnyanganga School", industry: "Education", logo: "/assets/clients/Dnyanganga_English_Medium_School_Sinhgad.jpg" },
+    { name: "Silver Crest", industry: "Education", logo: "/assets/clients/Silver_Crest_English_Medium_School.jpg" },
+    { name: "IndoGlobal", industry: "Technology", logo: "/assets/clients/IndoGlobal.jpg" },
+    { name: "Zeal College", industry: "Education", logo: "/assets/clients/Zeal.jpg" },
+    { name: "Polytechnic", industry: "Education", logo: "/assets/clients/Avsari_polytecnic.jpg" },
+    { name: "Dassault", industry: "Technology", logo: "/assets/clients/Dassault.jpg" },
+    { name: "Smart Work", industry: "Technology", logo: "/assets/clients/Smart_Work.jpg" },
+    { name: "Wellington", industry: "Education", logo: "/assets/clients/Wellignton.jpg" },
+    { name: "WeWork", industry: "Technology", logo: "/assets/clients/wework.jpg" }
   ]
 
   return (
@@ -95,8 +136,16 @@ const Clients = () => {
         <meta name="description" content="Meet our satisfied clients and read testimonials from leading organizations we serve." />
       </Helmet>
 
-      <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative text-white py-20" style={{
+        backgroundImage: `url('/assets/clients/IndoGlobal.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center center',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed'
+      }}>
+        {/* Overlay for better text readability */}
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Clients</h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto">
             Trusted by leading organizations across various industries for our security and facility management services.
@@ -116,12 +165,16 @@ const Clients = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
             {clientLogos.map((client, index) => (
-              <div key={index} className="bg-gray-100 rounded-lg p-6 flex items-center justify-center hover:shadow-lg transition-shadow">
+              <div key={index} className="bg-white rounded-lg p-6 flex items-center justify-center hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-gray-200">
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center mx-auto mb-2">
-                    <span className="text-white font-bold text-lg">{client.name.charAt(0)}</span>
+                  <div className="w-20 h-20 rounded-lg overflow-hidden mx-auto mb-3 shadow-md">
+                    <img
+                      src={client.logo}
+                      alt={client.name}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div className="text-sm font-medium text-gray-900">{client.name}</div>
                   <div className="text-xs text-gray-500">{client.industry}</div>
@@ -148,8 +201,12 @@ const Clients = () => {
             {clientTestimonials.map((client) => (
               <div key={client.id} className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
-                    {client.name.charAt(0)}
+                  <div className="w-16 h-16 rounded-lg overflow-hidden mr-4">
+                    <img 
+                      src={client.logo} 
+                      alt={client.name}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-gray-900">{client.name}</h3>

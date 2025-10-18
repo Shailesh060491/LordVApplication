@@ -5,79 +5,79 @@ const Gallery = () => {
   const galleryProjects = [
     {
       id: 1,
-      title: "Corporate Office Security",
-      description: "Complete security solution for a major IT company including manned guards and electronic security systems.",
+      title: "Security Services",
+      description: "Professional security solutions with trained personnel and modern equipment for comprehensive protection.",
       category: "Security",
-      image: "/assets/gallery/security-1.jpg",
-      features: ["24/7 Security", "Access Control", "CCTV Surveillance"]
+      image: "/assets/services/Security.jpg",
+      features: ["24/7 Security", "Trained Guards", "Modern Equipment"]
     },
     {
       id: 2,
-      title: "Hospital Housekeeping",
-      description: "Professional housekeeping services for a leading healthcare facility with strict hygiene protocols.",
+      title: "Housekeeping Services",
+      description: "Professional housekeeping services with eco-friendly products and trained uniformed staff.",
       category: "Housekeeping",
-      image: "/assets/gallery/housekeeping-1.jpg",
-      features: ["Daily Cleaning", "Sanitization", "Waste Management"]
+      image: "/assets/services/Housekeeping1.jpg",
+      features: ["Daily Cleaning", "Eco-friendly Products", "Trained Staff"]
     },
     {
       id: 3,
-      title: "Educational Campus Management",
-      description: "Complete facility management for a prestigious educational institution including maintenance and security.",
+      title: "Facility Management",
+      description: "Comprehensive facility management including property upkeep, operations, and compliance management.",
       category: "Facility Management",
-      image: "/assets/gallery/facility-1.jpg",
-      features: ["Building Maintenance", "Security Services", "Soft Services"]
+      image: "/assets/services/facility_property_management.jpg",
+      features: ["Property Upkeep", "Operations Management", "Compliance"]
     },
     {
       id: 4,
-      title: "Banking Security Solutions",
-      description: "Advanced security systems for a major bank including cash management and armed escort services.",
-      category: "Security",
-      image: "/assets/gallery/security-2.jpg",
-      features: ["Cash Management", "Armed Security", "Electronic Systems"]
+      title: "Event Management",
+      description: "Professional event management staffing with skilled manpower for planning, coordination, and crowd management.",
+      category: "Event Management",
+      image: "/assets/services/Event_Management.jpg",
+      features: ["Event Planning", "Crowd Management", "Professional Staff"]
     },
     {
       id: 5,
-      title: "Manufacturing Facility",
-      description: "Industrial facility management including maintenance, security, and housekeeping services.",
-      category: "Facility Management",
-      image: "/assets/gallery/facility-2.jpg",
-      features: ["Industrial Maintenance", "Security Guards", "Cleaning Services"]
+      title: "Garden Maintenance",
+      description: "Professional garden maintenance services including landscaping, trimming, and outdoor upkeep.",
+      category: "Garden Maintenance",
+      image: "/assets/services/GardenManagement.jpg",
+      features: ["Landscaping", "Trimming", "Outdoor Upkeep"]
     },
     {
       id: 6,
-      title: "Residential Complex",
-      description: "Complete facility management for a premium residential complex with 24/7 support services.",
-      category: "Facility Management",
-      image: "/assets/gallery/facility-3.jpg",
-      features: ["Property Management", "Security Services", "Maintenance"]
+      title: "Contract Labor Supply",
+      description: "Skilled and unskilled labor supply on contract basis for various operational needs with competitive pricing.",
+      category: "Labor Supply",
+      image: "/assets/services/ContractLabourSupply.jpg",
+      features: ["Skilled Labor", "Unskilled Labor", "Contract Services"]
     },
     {
       id: 7,
-      title: "Shopping Mall Services",
-      description: "Comprehensive services for a large shopping mall including security, housekeeping, and facility management.",
-      category: "Multi-Service",
-      image: "/assets/gallery/mall-1.jpg",
-      features: ["Security Services", "Housekeeping", "Facility Management"]
+      title: "Consulting Services",
+      description: "Expert advisory and compliance management under EPF, ESI, Minimum Wages Act, and labor laws with documentation assistance.",
+      category: "Consulting",
+      image: "/assets/services/Consulting.jpg",
+      features: ["Compliance Management", "Documentation", "Expert Advisory"]
     },
     {
       id: 8,
-      title: "Office Complex Housekeeping",
-      description: "Professional housekeeping services for a modern office complex with daily cleaning and maintenance.",
+      title: "Housekeeping Excellence",
+      description: "Advanced housekeeping services with eco-friendly products and professional uniformed staff for various facilities.",
       category: "Housekeeping",
-      image: "/assets/gallery/housekeeping-2.jpg",
-      features: ["Daily Cleaning", "Deep Cleaning", "Maintenance Support"]
+      image: "/assets/services/Housekeeping2.jpg",
+      features: ["Eco-friendly Products", "Professional Staff", "Quality Service"]
     },
     {
       id: 9,
-      title: "Data Center Security",
-      description: "High-security solutions for a critical data center including access control and monitoring systems.",
-      category: "Security",
-      image: "/assets/gallery/security-3.jpg",
-      features: ["Access Control", "24/7 Monitoring", "Emergency Response"]
+      title: "Comprehensive Housekeeping",
+      description: "Complete housekeeping solutions including daily cleaning, sanitization, and waste management for all types of facilities.",
+      category: "Housekeeping",
+      image: "/assets/services/Housekeeping3.jpg",
+      features: ["Daily Cleaning", "Sanitization", "Waste Management"]
     }
   ]
 
-  const categories = ["All", "Security", "Housekeeping", "Facility Management", "Multi-Service"]
+  const categories = ["All", "Security", "Housekeeping", "Facility Management", "Event Management", "Garden Maintenance", "Labor Supply", "Consulting"]
 
   return (
     <>
@@ -86,8 +86,16 @@ const Gallery = () => {
         <meta name="description" content="View our portfolio of security, housekeeping, and facility management projects." />
       </Helmet>
 
-      <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative text-white py-20" style={{
+        backgroundImage: `url('/assets/services/facility_property_management.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center center',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed'
+      }}>
+        {/* Overlay for better text readability */}
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Project Gallery</h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto">
             Explore our portfolio of successful security, housekeeping, and facility management projects.
@@ -102,7 +110,7 @@ const Gallery = () => {
             {categories.map((category) => (
               <button
                 key={category}
-                className="px-6 py-3 rounded-full bg-gray-100 text-gray-700 hover:bg-blue-600 hover:text-white transition-all duration-200 font-medium"
+                className="px-6 py-3 rounded-full bg-gray-100 text-gray-700 hover:bg-red-600 hover:text-white transition-all duration-200 font-medium"
               >
                 {category}
               </button>
@@ -117,20 +125,16 @@ const Gallery = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {galleryProjects.map((project) => (
               <div key={project.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                <div className="h-48 bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center">
-                  <div className="text-white text-center">
-                    <div className="text-4xl mb-2">
-                      {project.category === "Security" && "🛡️"}
-                      {project.category === "Housekeeping" && "🧹"}
-                      {project.category === "Facility Management" && "🏢"}
-                      {project.category === "Multi-Service" && "🔧"}
-                    </div>
-                    <p className="text-sm opacity-80">Project Image</p>
-                  </div>
+                <div className="h-48 overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-3">
-                    <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full font-medium">
+                    <span className="text-xs bg-red-100 text-red-800 px-2 py-1 rounded-full font-medium">
                       {project.category}
                     </span>
                   </div>

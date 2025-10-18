@@ -1,21 +1,19 @@
 {
-  "brand": "Lord V Services",
-  "title": "Lord V Services - Security & Facilities Management Solutions",
-  "description": "Leading provider of comprehensive security services, facility management, housekeeping, electronic security, and asset management solutions.",
-  "keywords": "security services, facility management, housekeeping, electronic security, third-party outsourcing, asset management, soft services, cash management",
-  "author": "Lord V Services",
+  "brand": "Lord V Services Pvt. Ltd.",
+  "title": "Lord V Services - Trusted Facility Management & Labor Services Across Pune",
+  "description": "Leading facility management and labor services company based in Pune, Maharashtra, delivering clean, secure, and efficient solutions to residential, commercial, and industrial clients.",
+  "keywords": "facility management, labor services, housekeeping, security services, property management, garden maintenance, contract labor, event management, consulting services, Pune",
+  "author": "Lord V Services Pvt. Ltd.",
   "logo": "/assets/logo.png",
   "favicon": "/assets/favicon.ico",
   "contact": {
-    "email": "info@lordvservices.com",
+    "email": "support@lordvservices.com",
     "phone": "+91 8412087700",
-    "address": "New Delhi, India",
+    "address": "60 Feet Road, Near Bhairavnath Gas Agency, Opp. Amazon Prime, Pimple Gurav, District - Pune, Maharashtra",
     "website": "https://lordvservices.com"
   },
   "social": {
-    "facebook": "https://facebook.com/lordvservices",
-    "twitter": "https://twitter.com/lordvservices",
-    "linkedin": "https://linkedin.com/company/lordvservices",
-    "instagram": "https://instagram.com/lordvservices"
+    "facebook": "https://www.facebook.com/LordVfacilities/",
+    "linkedin": "https://www.linkedin.com/company/lord-v-services/posts/"
   }
 }

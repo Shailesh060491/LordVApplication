@@ -26,28 +26,36 @@ const Contact = () => {
   }
 
   const services = [
-    "Security Services",
+    "Facility and Property Management",
     "Housekeeping Services", 
-    "Facility Management",
-    "Electronic Security",
-    "Third-Party Outsourcing",
-    "Asset Management",
-    "Soft Services",
-    "Cash Management"
+    "Deep Cleaning Services",
+    "Garden Maintenance",
+    "Contract Labor Supply",
+    "Security & Technical Staff",
+    "Event Management Staffing",
+    "Consulting & Compliance Services"
   ]
 
   return (
     <>
       <Helmet>
         <title>Contact Us - Lord V Services</title>
-        <meta name="description" content="Get in touch with Lord V Services for security, housekeeping, and facility management solutions." />
+        <meta name="description" content="Get in touch with Lord V Services Pvt. Ltd. for facility management, housekeeping, security, and labor services in Pune, Maharashtra." />
       </Helmet>
 
-      <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative text-white py-20" style={{
+        backgroundImage: `url('/assets/Contact/Contact_background.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center center',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed'
+      }}>
+        {/* Overlay for better text readability */}
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-            Get in touch with us for professional security, housekeeping, and facility management solutions.
+            Get in touch with us for professional facility management, housekeeping, security, and labor services in Pune.
           </p>
         </div>
       </section>
@@ -181,8 +189,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">Phone</h3>
-                    <p className="text-gray-600 mb-1">+91 8412087700</p>
-                    <p className="text-gray-600">24/7 Emergency: +91 98765 43210</p>
+                    <p className="text-gray-600 mb-1">+91 9226551568</p>
+                    <p className="text-gray-600">24/7 Emergency Support Available</p>
                   </div>
                 </div>
 
@@ -194,8 +202,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">Email</h3>
-                    <p className="text-gray-600 mb-1">info@lordvservices.com</p>
-                    <p className="text-gray-600">support@lordvservices.com</p>
+                    <p className="text-gray-600 mb-1">support@lordvservices.com</p>
+                    <p className="text-gray-600">hr@lordvservices.com</p>
                   </div>
                 </div>
 
@@ -210,8 +218,9 @@ const Contact = () => {
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">Address</h3>
                     <p className="text-gray-600">
                       Lord V Services Pvt. Ltd.<br />
-                      New Delhi, India<br />
-                      110001
+                      60 Feet Rd, opp. Amazon Prime, near Bhairavnath Bharat Gas Agency<br />
+                      Shivneri Colony, Agrasen Nagar Society<br />
+                      Pimple Gurav, Pimpri-Chinchwad, Maharashtra 411061
                     </p>
                   </div>
                 </div>
@@ -235,7 +244,7 @@ const Contact = () => {
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Quick Contact</h3>
                 <div className="space-y-3">
                   <a
-                    href="tel:+918412087700"
+                    href="tel:+919226551568"
                     className="flex items-center text-blue-600 hover:text-blue-700 font-medium"
                   >
                     <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -244,7 +253,7 @@ const Contact = () => {
                     Call Now
                   </a>
                   <a
-                    href="mailto:info@lordvservices.com"
+                    href="mailto:support@lordvservices.com"
                     className="flex items-center text-blue-600 hover:text-blue-700 font-medium"
                   >
                     <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -254,6 +263,33 @@ const Contact = () => {
                   </a>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Commitment Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Our Commitment
+            </h2>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white rounded-xl shadow-lg p-8">
+              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                At Lord V Services Pvt. Ltd., our commitment is the cornerstone of everything we do. We believe that a clean, secure, and safe residential or commercial environment is not a luxury but an essential foundation for promoting health, productivity, and well-being. We are dedicated to delivering consistent, high-quality facility and labor management services tailored to meet the unique needs of each client.
+              </p>
+              
+              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                Our commitment involves employing a skilled and professional workforce rigorously trained to uphold the highest standards of service, integrity, and safety. We prioritize customer satisfaction by listening carefully to client requirements and responding proactively with innovative and effective solutions.
+              </p>
+              
+              <p className="text-lg text-gray-600 leading-relaxed">
+                With a focus on reliability, eco-friendly practices, and continuous improvement, Lord V Services strives to build lasting partnerships grounded in trust and mutual respect, ensuring peace of mind for our clients and contributing positively to the communities we serve.
+              </p>
             </div>
           </div>
         </div>

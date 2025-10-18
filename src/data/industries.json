@@ -2,45 +2,38 @@
   "industries": [
     {
       "id": 1,
-      "name": "Corporate Offices",
-      "description": "Comprehensive facility management and security services for corporate offices, business parks, and commercial complexes.",
-      "icon": "office",
-      "projects": 45
+      "name": "Hospitality",
+      "description": "Housekeeping, security, and maintenance for hotels and resorts to ensure guest satisfaction and operational excellence.",
+      "icon": "hospitality",
+      "projects": 15
     },
     {
       "id": 2,
-      "name": "Healthcare Facilities",
-      "description": "Specialized security and facility management for hospitals, clinics, and healthcare centers with hygiene protocols.",
-      "icon": "healthcare",
-      "projects": 28
+      "name": "Education",
+      "description": "Clean, safe, and secure environments for schools, colleges, and universities with comprehensive facility management.",
+      "icon": "education",
+      "projects": 8
     },
     {
       "id": 3,
-      "name": "Educational Institutions",
-      "description": "Complete facility management and security solutions for schools, colleges, and educational campuses.",
-      "icon": "education",
-      "projects": 35
+      "name": "Healthcare",
+      "description": "Specialized hygienic services for hospitals and clinics meeting regulatory standards with professional staff.",
+      "icon": "healthcare",
+      "projects": 5
     },
     {
       "id": 4,
-      "name": "Manufacturing Units",
-      "description": "Industrial security and facility management for manufacturing plants, warehouses, and industrial complexes.",
-      "icon": "manufacturing",
-      "projects": 22
+      "name": "Retail & Commercial",
+      "description": "Facility operations and cleaning for offices, malls, and corporate spaces with professional management services.",
+      "icon": "retail",
+      "projects": 12
     },
     {
       "id": 5,
-      "name": "Banking & Financial",
-      "description": "High-security solutions for banks, financial institutions, and cash management with armed security.",
-      "icon": "finance",
-      "projects": 18
-    },
-    {
-      "id": 6,
-      "name": "Residential Complexes",
-      "description": "Complete facility management and security services for residential apartments, gated communities, and housing societies.",
-      "icon": "residential",
-      "projects": 32
+      "name": "Industrial & Manufacturing",
+      "description": "Industrial cleaning, equipment maintenance, and labor staffing for safe, efficient operations in manufacturing units.",
+      "icon": "manufacturing",
+      "projects": 6
     }
   ]
 }
