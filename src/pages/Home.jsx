@@ -66,7 +66,7 @@ const Home = () => {
       )
       
       console.log('Email sent successfully:', result)
-      alert('Thank you for your inquiry! We will get back to you soon.')
+      alert('Thank you for your inquiry! We will get back to you soon.\n\nNote: Please check your spam folder as the email may have been filtered.')
       
       // Reset form
       setFormData({
