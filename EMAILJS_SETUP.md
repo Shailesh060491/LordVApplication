@@ -17,11 +17,11 @@
 ### Step 3: Create Email Template
 1. Go to **Email Templates**
 2. Click **Create New Template**
-3. Use this template content:
+3. **IMPORTANT:** Set the **"To Email"** field to: `support@lordvservices.com`
+4. Set the **Subject** to: `New Contact Form Submission from {{from_name}}`
+5. Use this template content:
 
 ```
-Subject: New Contact Form Submission from {{from_name}}
-
 Dear Lord V Services Team,
 
 You have received a new contact form submission:
@@ -39,7 +39,9 @@ Best regards,
 Lord V Services Website
 ```
 
-4. Save the template and note down your **Template ID**
+6. Save the template and note down your **Template ID**
+
+**⚠️ CRITICAL:** The **"To Email"** field in the template determines where emails are sent. Make sure it's set to `support@lordvservices.com`!
 
 ### Step 4: Get Your Public Key
 1. Go to **Account** → **General**

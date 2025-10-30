@@ -25,30 +25,38 @@ const Contact = () => {
     e.preventDefault()
     
     // Validate form
-    if (!formData.name || !formData.email || !formData.message) {
-      alert('Please fill in all required fields (Name, Email, Message)')
+    if (!formData.name || !formData.email || !formData.message || !formData.phone || !formData.service) {
+      alert('Please fill in all required fields (Name, Email, Phone, Service, Message)')
       return
     }
 
     setIsSubmitting(true)
 
     try {
+      // Debug: Log configuration
+      console.log('EmailJS Configuration:', EMAILJS_CONFIG)
+      console.log('Form Data:', formData)
+      
       // Initialize EmailJS with your public key
       emailjs.init(EMAILJS_CONFIG.PUBLIC_KEY)
+      
+      // Debug: Log template parameters
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        phone: formData.phone,
+        company: formData.company,
+        service: formData.service,
+        message: formData.message,
+        to_email: EMAILJS_CONFIG.TO_EMAIL
+      }
+      console.log('Sending email with params:', templateParams)
       
       // Send email using EmailJS
       const result = await emailjs.send(
         EMAILJS_CONFIG.SERVICE_ID,
         EMAILJS_CONFIG.TEMPLATE_ID,
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          phone: formData.phone,
-          company: formData.company,
-          service: formData.service,
-          message: formData.message,
-          to_email: EMAILJS_CONFIG.TO_EMAIL
-        }
+        templateParams
       )
       
       console.log('Email sent successfully:', result)
@@ -66,6 +74,11 @@ const Contact = () => {
       
     } catch (error) {
       console.error('Failed to send email:', error)
+      console.error('Error details:', {
+        text: error.text,
+        status: error.status,
+        message: error.message
+      })
       alert('Failed to send message. Please try again or contact us directly at support@lordvservices.com')
     } finally {
       setIsSubmitting(false)

@@ -39,22 +39,30 @@ const Home = () => {
     setIsSubmitting(true)
 
     try {
+      // Debug: Log configuration
+      console.log('EmailJS Configuration:', EMAILJS_CONFIG)
+      console.log('Form Data:', formData)
+      
       // Initialize EmailJS with your public key
       emailjs.init(EMAILJS_CONFIG.PUBLIC_KEY)
+      
+      // Debug: Log template parameters
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        phone: formData.phone,
+        company: formData.location, // Using location as company
+        service: formData.service,
+        message: `Quick inquiry from Home page - Service: ${formData.service}, Location: ${formData.location}`,
+        to_email: EMAILJS_CONFIG.TO_EMAIL
+      }
+      console.log('Sending email with params:', templateParams)
       
       // Send email using EmailJS
       const result = await emailjs.send(
         EMAILJS_CONFIG.SERVICE_ID,
         EMAILJS_CONFIG.TEMPLATE_ID,
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          phone: formData.phone,
-          company: formData.location, // Using location as company
-          service: formData.service,
-          message: `Quick inquiry from Home page - Service: ${formData.service}, Location: ${formData.location}`,
-          to_email: EMAILJS_CONFIG.TO_EMAIL
-        }
+        templateParams
       )
       
       console.log('Email sent successfully:', result)
@@ -71,6 +79,11 @@ const Home = () => {
       
     } catch (error) {
       console.error('Failed to send email:', error)
+      console.error('Error details:', {
+        text: error.text,
+        status: error.status,
+        message: error.message
+      })
       alert('Failed to send message. Please try again or contact us directly at support@lordvservices.com')
     } finally {
       setIsSubmitting(false)
